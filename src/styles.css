@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "Domine", serif;
+}
+.heading {
+  padding: 2rem;
+  background-color: #1e3a8a;
+  border-bottom-right-radius: 25px;
+  /* background-color: #2563eb; */
+}
+.heading h1 {
+  color: white;
+  text-align: center;
+  font-weight: lighter;
 }
