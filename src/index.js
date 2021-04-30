@@ -4,6 +4,8 @@ var amountReceived = document.getElementById("amountReceived");
 var calcBtn = document.getElementById("calculate");
 var secondBox = document.getElementById("secondBox");
 var tableResult = document.getElementsByClassName("result");
+var table = document.querySelector(".result-table");
+table.style.setProperty("display", "none");
 const getNextElement = () => {
   secondBox.style.display = "block";
   nextBtn.style.display = "none";
@@ -28,6 +30,7 @@ const calculateChange = () => {
   }
 
   console.log(changeToBeReturned);
+  table.style.removeProperty("display");
   changeToBeReturned.map((item, index) => {
     return (tableResult.item(index).innerHTML = item);
   });

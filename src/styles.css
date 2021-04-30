@@ -78,17 +78,18 @@ input[type="number"] {
 #calculate:hover {
   background-color: #2563eb;
 }
-table {
+.result-table {
   margin: auto;
   margin-top: 40px;
-  width: 500px;
+  width: 400px;
 }
-table,
+.result-table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #1e40af;
   border-collapse: collapse;
   text-align: center;
+  color: #4338ca;
 }
 td {
   width: 50px;
