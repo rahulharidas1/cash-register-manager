@@ -66,6 +66,7 @@ input[type="number"] {
 #next,
 #calculate {
   padding: 5px 12px;
+
   border-radius: 8px;
   cursor: pointer;
   border: none;
@@ -76,4 +77,23 @@ input[type="number"] {
 #next:hover,
 #calculate:hover {
   background-color: #2563eb;
+}
+table {
+  margin: auto;
+  margin-top: 40px;
+  width: 500px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+td {
+  width: 50px;
+}
+th,
+td {
+  padding: 10px;
 }
