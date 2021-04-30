@@ -28,6 +28,9 @@ const calculateChange = () => {
   }
 
   console.log(changeToBeReturned);
+  changeToBeReturned.map((item, index) => {
+    return (tableResult.item(index).innerHTML = item);
+  });
   // console.log(tableResult.item(1).innerHTML);
   changeToBeReturned = [];
   // return changeToBeReturned;
