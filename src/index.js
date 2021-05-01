@@ -30,8 +30,9 @@ const calculateChange = () => {
 
   var currentBalance = receivedAmount - billAmount;
   if (/^\d+$/.test(billAmount) && /^\d+$/.test(receivedAmount)) {
-    if (receivedAmount < billAmount) {
-      calcError.innerHTML = "Amount received is less than the total bill!";
+    if (receivedAmount < billAmount || receivedAmount === billAmount) {
+      calcError.innerHTML =
+        "Amount received is insufficient/no change to be returned!";
     } else {
       calcError.style.setProperty("display", "none");
       for (let i = 0; i < denominations.length; i++) {
