@@ -98,3 +98,9 @@ th,
 td {
   padding: 10px;
 }
+
+.errormsg,
+.calc-error {
+  color: #f87171;
+  font-size: 13px;
+}
